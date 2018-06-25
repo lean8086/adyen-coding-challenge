@@ -3,7 +3,7 @@ import Venue from './Venue';
 import get from 'axios';
 import config from './config';
 
-class List extends Component {
+class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -64,4 +64,4 @@ class List extends Component {
   }
 };
 
-export default List;
+export default Search;
