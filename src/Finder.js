@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import SearchBox from './SearchBox';
 import Venue from './Venue';
 import get from 'axios';
 import config from './config';
 
-class Search extends Component {
+class Finder extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      headerMessage: null,
-      headerFullLocation: null,
       venues: [],
       error: null,
       isLoaded: false,
@@ -51,6 +50,7 @@ class Search extends Component {
     }
     return (
       <div>
+        <SearchBox />
         {venues.groups.map((group, index) => (
           <section key={index}>
             <header>{group.type}</header>
@@ -64,4 +64,4 @@ class Search extends Component {
   }
 };
 
-export default Search;
+export default Finder;

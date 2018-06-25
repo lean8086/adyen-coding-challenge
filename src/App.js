@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from './Search';
+import Finder from './Finder';
 
 const App = () => (
   <div>
@@ -7,7 +7,7 @@ const App = () => (
       <h1 className="banner__logo">Adyen Coding Challenge</h1>
     </header>
     <main>
-      <Search />
+      <Finder />
     </main>
   </div>
 );
