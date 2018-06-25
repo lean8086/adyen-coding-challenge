@@ -1,6 +1,5 @@
-const React = require('react');
-const Search = require('../../containers/Search');
-const List = require('../../containers/List');
+import React from 'react';
+import List from './List';
 
 const App = () => (
   <div>
@@ -8,10 +7,9 @@ const App = () => (
       <h1 className="banner__logo">Adyen Coding Challenge</h1>
     </header>
     <main>
-      <Search />
       <List />
     </main>
   </div>
 );
 
-module.exports = App;
+export default App;
