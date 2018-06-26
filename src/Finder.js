@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 import SearchBox from './SearchBox';
-import Venue from './Venue';
+import Loading from './Loading';
+import Error from './Error';
+import Group from './Group';
 import get from 'axios';
 import config from './config';
+import initialState from './initialState';
 
 class Finder extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      venues: [],
-      error: null,
-      isLoaded: false,
-    };
+    this.state = initialState;
   }
-  
+
   componentDidMount() {
+    this.getVenues();
+  }
+
+  UNSAFE_componentWillUpdate() {
+    this.getVenues();
+  }
+
+  getVenues() {
     get(config.urls.venues, {
       params: {
         ...config.params,
-        v: "20180323",
+        ...this.state.params,
         ll: "40.7243,-74.0018",
-        query: "coffee",
-        limit: 1,
       }
     })
       .then(
@@ -32,32 +37,27 @@ class Finder extends Component {
           })
         },
         (error) => {
-          this.setState({
-            isLoaded: true,
-            error,
-          });
+          // this.setState({
+          //   isLoaded: true,
+          //   error,
+          // });
         }
       );
   }
-  
+
   render() {
     const { error, isLoaded, venues } = this.state;
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    }
-    if (!isLoaded) {
-      return <div>Loading...</div>;
-    }
     return (
       <div>
-        <SearchBox />
-        {venues.groups.map((group, index) => (
-          <section key={index}>
-            <header>{group.type}</header>
-            {group.items.map(({ venue }) => (
-              <Venue key={venue.id} {...venue} />
-            ))}
-          </section>
+        <SearchBox {...this.state.params} updateParams={params => this.setState({ params })} />
+        {error &&
+          <Error error={error} />
+        }
+        {!isLoaded &&
+          <Loading />
+        }
+        {venues.group && venues.groups.map(group => (
+          <Group {...group} />
         ))}
       </div>
     );

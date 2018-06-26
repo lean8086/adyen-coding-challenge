@@ -12,10 +12,11 @@ export const section = {
   food: 'food',
   drinks: 'drinks',
   coffee: 'coffee',
+  shops: 'shops',
   arts: 'arts',
   outdoors: 'outdoors',
   sights: 'sights',
-  trending: 'trending',
+  'trending places': 'trending',
 };
 
 export const radius = {
@@ -35,5 +36,5 @@ export const price = {
 
 export const openNow = {
   'are open now': true,
-  'don\'t matter if open or not': true,
+  'don\'t matter if open or not': false,
 }
