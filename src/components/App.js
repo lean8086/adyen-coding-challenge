@@ -1,5 +1,5 @@
 import React from 'react';
-import Finder from './Finder';
+import FinderContainer from '../containers/FinderContainer';
 
 const App = () => (
   <div>
@@ -7,7 +7,7 @@ const App = () => (
       <h1 className="banner__logo">...</h1>
     </header>
     <main>
-      <Finder />
+      <FinderContainer />
     </main>
   </div>
 );
