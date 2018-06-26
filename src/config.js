@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   urls: {
     venues: 'https://api.foursquare.com/v2/venues/explore',
   },
