@@ -6,7 +6,7 @@
 export default {
   day: {
     Today: '',
-    'Some day': 'any',
+    'Someday': 'any',
   },
   section: {
     food: 'food',
@@ -16,13 +16,6 @@ export default {
     arts: 'arts',
     outdoors: 'outdoors',
     sights: 'sights',
-    'trending places': 'trending',
-  },
-  radius: {
-    '20 blocks': 2000,
-    '15 blocks': 1500,
-    '10 blocks': 1000,
-    '5 blocks': 500,
   },
   price: {
     'all the': '1,2,3,4',
@@ -33,6 +26,12 @@ export default {
   },
   openNow: {
     'are open now': 1,
-    'which may be open or not': 0,
+    'may be open or not': 0,
+  },
+  radius: {
+    '20 blocks': 2000,
+    '15 blocks': 1500,
+    '10 blocks': 1000,
+    '5 blocks': 500,
   },
 };

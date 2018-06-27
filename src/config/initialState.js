@@ -2,9 +2,9 @@ export default {
   venues: [],
   params: {
     day: '',
-    section: 'food',
+    section: 'coffee',
     radius: 1000,
-    price: '1,2,3,4',
+    price: '1,2',
     openNow: 1,
     ll: '',
   },
