@@ -2,7 +2,6 @@ import { get } from 'axios';
 import { foursquareAPI } from '../config/api';
 
 export const listVenues = (params) => dispatch => {
-  console.log(params);
   // get(foursquareAPI.url, {
   //   params: {
   //     ...foursquareAPI.params,
