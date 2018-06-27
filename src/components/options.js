@@ -4,7 +4,7 @@
  * @see https://developer.foursquare.com/docs/api/venues/explore
  */
 export const day = {
-  Today: 0,
+  Today: '',
   'One day': 'any',
 };
 
@@ -27,14 +27,14 @@ export const radius = {
 }
 
 export const price = {
-  'all the': 0,
-  cheap: 1,
-  affordable: 2,
-  reasonable: 3,
-  expensive: 4,
+  'all the': '1,2,3,4',
+  cheap: '1',
+  affordable: '1,2',
+  reasonable: '2,3',
+  expensive: '3,4',
 }
 
 export const openNow = {
-  'are open now': true,
-  'don\'t matter if open or not': false,
+  'are open now': 1,
+  'don\'t matter if open or not': 0,
 }

@@ -3,13 +3,14 @@ import Venue from './Venue';
 
 const VenuesList = ({ venues }) => (
   <div>
-    {venues && venues.map(group => (
-      <section key={group.type}>
-        <header>{group.type}</header>
-        {group.items.map(({ venue }) => (
-          <Venue key={venue.id} {...venue} />
-        ))}
-      </section>
+    {venues.groups && venues.groups.map(group => (
+      group.items.length &&
+        <section key={group.name}>
+          <header>{group.type} in {venues.headerFullLocation}</header>
+          {group.items.map(({ venue }) => (
+            <Venue key={venue.id} {...venue} />
+          ))}
+        </section>
     ))}
   </div>
 );

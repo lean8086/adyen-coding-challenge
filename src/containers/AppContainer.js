@@ -10,6 +10,13 @@ class App extends Component {
     this.props.listVenues(this.props.params);
   }
 
+  // Compare a change in params to make a new search of venues.
+  componentDidUpdate(prevProps) {
+    if (JSON.stringify(this.props.params) !== JSON.stringify(prevProps.params)) {
+      this.props.listVenues(this.props.params);
+    }
+  }
+
   render() {
     return (
       <div>
@@ -28,11 +35,9 @@ const mapStateToProps = state => ({
   params: state.params,
 });
 
-const mapDispatchToProps = dispatch => ({
-  listVenues(params) {
-    dispatch(listVenues(params));
-  },
-});
+const mapDispatchToProps = {
+  listVenues,
+};
 
 export default connect(
   mapStateToProps,
