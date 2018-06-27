@@ -1,4 +1,4 @@
-import initialState from './initialState';
+import initialState from '../config/initialState';
 
 const reducers = (state = initialState, action) => {
   switch (action.type) {

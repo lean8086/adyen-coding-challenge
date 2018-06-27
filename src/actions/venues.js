@@ -1,8 +1,8 @@
-import axios from 'axios';
-import config from '../config';
+import { get } from 'axios';
+import config from '../config/api';
 
 export const listVenues = (params) => dispatch => {
-  return axios.get(config.urls.venues, {
+  return get(config.urls.venues, {
     params: {
       ...config.params,
       ...params,

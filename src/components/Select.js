@@ -1,16 +1,16 @@
 import React from 'react';
-import * as options from './options';
+import searchOptions from '../config/searchOptions';
 
 const Select = ({ type, value, updateParams }) => (
   <select
     name={type}
-    selected={value}
+    value={value}
     onChange={(ev) => updateParams({ [type]: ev.target.value })}
   >
-    {Object.keys(options[type]).map(text => (
+    {Object.keys(searchOptions[type]).map(text => (
       <option
-        key={options[type][text]}
-        value={options[type][text]}
+        key={searchOptions[type][text]}
+        value={searchOptions[type][text]}
       >{text}</option>
     ))}
   </select>
