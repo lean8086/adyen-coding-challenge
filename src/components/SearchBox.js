@@ -5,7 +5,7 @@ const SearchBox = ({ day, section, radius, price, openNow }) => (
   <section>
     <p>
       <Select type="day" value={day} />
-      <span>, I would like to visit a place with </span>
+      <span>, I would like to go to a place with </span>
       <Select type="section" value={section} />
       <span>.</span>
     </p>
