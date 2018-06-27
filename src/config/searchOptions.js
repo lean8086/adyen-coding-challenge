@@ -33,6 +33,6 @@ export default {
   },
   openNow: {
     'are open now': 1,
-    'don\'t matter if open or not': 0,
+    'which may be open or not': 0,
   },
 };

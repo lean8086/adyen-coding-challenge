@@ -4,14 +4,15 @@ import SearchBox from '../components/SearchBox';
 import VenuesList from '../components/VenuesList';
 import { connect } from 'react-redux';
 import { listVenues } from '../actions/venues';
+import { getLocationParams } from '../actions/params';
 
 class App extends Component {
   componentDidMount() {
-    this.props.listVenues(this.props.params);
+    this.props.getLocationParams();
   }
 
-  // Compare a change in params to make a new search of venues.
   componentDidUpdate(prevProps) {
+    // Compare a change in params to make a new search of venues.
     if (JSON.stringify(this.props.params) !== JSON.stringify(prevProps.params)) {
       this.props.listVenues(this.props.params);
     }
@@ -37,6 +38,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   listVenues,
+  getLocationParams,
 };
 
 export default connect(
