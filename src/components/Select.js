@@ -1,11 +1,15 @@
 import React from 'react';
 import * as options from './options';
 
-const Select = ({ type, value }) => (
-  <select name={type} selected={value}>
-    {Object.keys(options[type]).map((text, index) => (
+const Select = ({ type, value, updateParams }) => (
+  <select
+    name={type}
+    selected={value}
+    onChange={(ev) => updateParams({ [type]: ev.target.value} )}
+  >
+    {Object.keys(options[type]).map(text => (
       <option
-        key={index}
+        key={options[type][text]}
         value={options[type][text]}
       >{text}</option>
     ))}

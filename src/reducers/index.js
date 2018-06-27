@@ -1,22 +1,19 @@
-const initialState = {
-  venues: [],
-  error: null,
-  isLoaded: false,
-  params: {
-    day: null,
-    section: 'food',
-    radius: 500,
-    price: 2,
-    openNow: true,
-  },
-};
+import initialState from './initialState';
 
 const reducers = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_VENUES':
+    case 'LIST_VENUES':
       return {
         ...state,
-        venues: action.data.groups,
+        venues: action.venues.groups,
+      };
+    case 'UPDATE_PARAMS':
+      return {
+        ...state,
+        params: {
+          ...state.params,
+          ...action.params,
+        },
       };
     default:
       return state;
