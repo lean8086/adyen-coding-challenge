@@ -5,7 +5,7 @@ const Select = ({ type, value, updateParams }) => (
   <select
     name={type}
     selected={value}
-    onChange={(ev) => updateParams({ [type]: ev.target.value} )}
+    onChange={(ev) => updateParams({ [type]: ev.target.value })}
   >
     {Object.keys(options[type]).map(text => (
       <option
