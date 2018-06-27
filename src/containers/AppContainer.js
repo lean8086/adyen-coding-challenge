@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
 import VenuesList from '../components/VenuesList';
 import { connect } from 'react-redux';
@@ -12,9 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header className="banner" role="banner">
-          <h1 className="banner__logo">...</h1>
-        </header>
+        <Header />
         <main>
           <SearchBox {...this.props.params} />
           <VenuesList venues={this.props.venues} />
