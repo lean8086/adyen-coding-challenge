@@ -3,7 +3,7 @@ export default {
   params: {
     day: '',
     section: 'coffee',
-    radius: 1000,
+    radius: 500,
     price: '1,2',
     openNow: 1,
     ll: '',
