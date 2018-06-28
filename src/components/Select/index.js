@@ -1,5 +1,5 @@
 import React from 'react';
-import searchOptions from '../config/searchOptions';
+import searchOptions from '../../config/searchOptions';
 
 const Select = ({ type, value, updateParams }) => (
   <select

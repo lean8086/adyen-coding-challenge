@@ -1,5 +1,5 @@
 import React from 'react';
-import Select from '../containers/SelectContainer';
+import Select from '../../containers/SelectContainer';
 
 const SearchBox = ({ day, section, radius, price, openNow }) => (
   <section>

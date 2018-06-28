@@ -1,5 +1,5 @@
 import React from 'react';
-import Group from './Group';
+import Group from '../Group';
 
 const List = ({ venues }) => (
   <div>
