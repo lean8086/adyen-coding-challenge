@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
-import VenuesList from '../components/VenuesList';
+import List from '../components/List';
 import { connect } from 'react-redux';
 import { listVenues } from '../actions/venues';
 import { getLocationParams } from '../actions/params';
@@ -24,7 +24,7 @@ class App extends Component {
         <Header />
         <main>
           <SearchBox {...this.props.params} />
-          <VenuesList venues={this.props.venues} />
+          <List venues={this.props.venues} />
         </main>
       </div>
     );
