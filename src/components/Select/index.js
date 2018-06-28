@@ -1,6 +1,9 @@
 import React from 'react';
 import searchOptions from '../../config/searchOptions';
 
+import 'stretchy';
+import './Select.css';
+
 const Select = ({ type, value, updateParams }) => (
   <select
     className="searchbox__select"
