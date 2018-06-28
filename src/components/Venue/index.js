@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Venue = ({ location, name, categories }) => (
-  <article>
+  <article className="venue">
     <p>name: {name}</p>
     <p>loc: {location.address}</p>
     <p>ll: {location.lat}, {location.lng}</p>

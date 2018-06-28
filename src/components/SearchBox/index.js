@@ -2,14 +2,14 @@ import React from 'react';
 import Select from '../../containers/SelectContainer';
 
 const SearchBox = ({ day, section, radius, price, openNow }) => (
-  <section>
-    <p>
+  <div className="searchBox">
+    <p className="searchBox__paragraph">
       <Select type="day" value={day} />
       <span>, I would like to </span>
       <Select type="section" value={section} />
       <span>.</span>
     </p>
-    <p>
+    <p className="searchBox__paragraph">
       <span>Show me </span>
       <Select type="price" value={price} />
       <span> places that </span>
@@ -18,7 +18,7 @@ const SearchBox = ({ day, section, radius, price, openNow }) => (
       <Select type="radius" value={radius} />
       <span> from me.</span>
     </p>
-  </section>
+  </div>
 );
 
 export default SearchBox;

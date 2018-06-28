@@ -2,8 +2,8 @@ import React from 'react';
 import Group from '../Group';
 
 const List = ({ venues }) => (
-  <div>
-    <h2>{venues.headerFullLocation}</h2>
+  <div className="venues">
+    <h2 className="venues__title">{venues.headerFullLocation}</h2>
     {venues.totalResults > 3 ?
       // Iterate venues by group
       venues.groups.map(group => group.items.length &&

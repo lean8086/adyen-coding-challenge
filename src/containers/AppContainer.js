@@ -33,14 +33,15 @@ class App extends Component {
   render() {
     const { params, loading, error, venues } = this.props;
     return (
-      <main>
+      <div>
         <Header />
-        <SearchBox {...params} />
-        
-        {loading && <Loading />}
-        {error && <Error error={error} />}
-        {venues && <List venues={venues} />}
-      </main>
+        <main role="main">
+          <SearchBox {...params} />
+          {loading && <Loading />}
+          {error && <Error error={error} />}
+          {venues && <List venues={venues} />}
+        </main>
+      </div>
     );
   }
 };

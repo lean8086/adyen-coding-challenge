@@ -3,6 +3,7 @@ import searchOptions from '../../config/searchOptions';
 
 const Select = ({ type, value, updateParams }) => (
   <select
+    className="searchbox__select"
     name={type}
     value={value}
     onChange={(ev) => updateParams({ [type]: ev.target.value })}
