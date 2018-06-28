@@ -13,7 +13,7 @@ export const fetchVenues = (params) => dispatch => {
   //     venues: res.data.response,
   //   }))
   //   .catch(error => dispatch({
-  //     type: 'FETCH_VENUES_SUCCESS',
+  //     type: 'FETCH_VENUES_ERROR',
   //     error,
   //   }))
 
