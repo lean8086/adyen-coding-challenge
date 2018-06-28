@@ -2,7 +2,7 @@ import initialState from '../config/initialState';
 
 const reducers = (state = initialState, action) => {
   switch (action.type) {
-    case 'FETCH_VENUES':
+    case 'FETCH_VENUES_REQUEST':
       return {
         ...state,
         loading: true,
