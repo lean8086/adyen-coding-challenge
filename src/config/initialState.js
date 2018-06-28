@@ -1,5 +1,5 @@
 export default {
-  venues: [],
+  venues: {},
   params: {
     day: '',
     section: 'coffee',
@@ -8,4 +8,6 @@ export default {
     openNow: 1,
     ll: '',
   },
+  loading: true,
+  error: null,
 };

@@ -4,7 +4,7 @@ export const foursquareAPI = {
     client_id: '0KNJF0EKA2CKJKQKDZZIARZAAIQMRLIWSNMPYKVRSHAVCD55',
     client_secret: '2YALLC4Q5XCOXF0JBIFAE5JW5G4YQ4XKFIZ1XY42MHVSGLXR',
     v: '20180323',
-    limit: 1,
+    limit: 10,
   },
 };
 
