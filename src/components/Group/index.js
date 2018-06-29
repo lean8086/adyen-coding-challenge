@@ -9,7 +9,6 @@ const Group = ({ type, items }) => (
     {items.map(({ venue }) => (
       <Venue key={venue.id} {...venue} />
     ))}
-    <Venue {...items[0].venue} />
   </section>
 );
 
