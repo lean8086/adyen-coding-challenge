@@ -32,6 +32,6 @@ export default {
     '10 blocks': 1000,
     '20 blocks': 2000,
     '40 blocks': 4000,
-    'a galaxy far far away': 10000,
+    'a galaxy far far': 10000,
   },
 };
