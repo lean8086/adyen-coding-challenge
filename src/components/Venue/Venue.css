@@ -1,0 +1,101 @@
+.venue {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.venue__header {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.venue__header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.venue__address {
+  display: inline-block;
+}
+
+.venue__categs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.venue__categ {
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #00112c;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.venue__content {
+  display: block;
+}
+
+.venue__distance {
+  display: inline-block;
+}
+
+.venue__distance p {
+  border: 1px solid #00112c;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.venue__maps {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.venue__maps a {
+  display: block;
+  background-image: linear-gradient(45deg, #0abf53, #4ee5e5);
+  color: #fff;
+  font-size: 13px;
+}
+
+.venue__distance p,
+.venue__maps a {
+  border-radius: 5px;
+  display: block;
+  width: 125px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  letter-spacing: normal;
+}
+
+@media (min-width: 1024px) {
+  .venue {
+    display: flex;
+  }
+  
+  .venue__header {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
+  .venue__content {
+    display: inline-block;
+    width: 280px;
+    font-size: 0;
+  }
+  
+  .venue__distance p,
+  .venue__maps a {
+    width: 105px;
+    height: 105px;
+    line-height: 105px;
+  }
+}

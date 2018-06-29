@@ -19,7 +19,7 @@ const SearchBox = ({ day, section, radius, price, openNow }) => (
         <Select type="openNow" value={openNow} />
         <span> and are less than </span>
         <Select type="radius" value={radius} />
-        <span> from me.</span>
+        <span> away.</span>
       </p>
     </div>
   </div>

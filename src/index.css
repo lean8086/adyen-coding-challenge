@@ -9,6 +9,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  margin-bottom: 50px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   font-weight: 300;
@@ -21,4 +22,16 @@ body {
   padding-right: 24px;
   padding-left: 24px;
   width: 100%;
+}
+
+.commonTitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: #00112c;
+}
+
+@media (min-width: 1024px) {
+  .commonTitle {
+    font-size: 32px;
+  }
 }

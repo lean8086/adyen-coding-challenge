@@ -63,7 +63,7 @@ export const fetchVenues = (params) => dispatch => {
             },
             "venue": {
               "id": "49b6e8d2f964a52016531fe3",
-              "name": "Russ & Daughters - " + params.section,
+              "name": "Russ & Daughters",
               "location": {
                 "address": "179 E Houston St",
                 "crossStreet": "btwn Allen & Orchard St",
