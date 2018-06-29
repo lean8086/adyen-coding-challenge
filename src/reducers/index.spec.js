@@ -88,7 +88,6 @@ describe('Reducer', () => {
       params: {
         test: 'test',
       },
-      loading: true,
     });
 
     expect(
@@ -105,7 +104,34 @@ describe('Reducer', () => {
         ...initialState.params,
         test: 'test',
       },
-      loading: true,
+    });
+  });
+  
+  it('should handle LOCATE', () => {
+    expect(
+      reducer({}, {
+        type: 'LOCATE',
+        ll: 'test',
+      })
+    ).toEqual({
+      params: {
+        ll: 'test',
+      },
+      located: true,
+    });
+
+    expect(
+      reducer(initialState, {
+        type: 'LOCATE',
+        ll: 'test',
+      })
+    ).toEqual({
+      ...initialState,
+      params: {
+        ...initialState.params,
+        ll: 'test',
+      },
+      located: true,
     });
   });
 });

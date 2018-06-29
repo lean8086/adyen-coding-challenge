@@ -9,4 +9,13 @@ describe('Params actions', () => {
     };
     expect(actions.updateParams(params)).toEqual(expectedAction);
   });
+  
+  it('should create an action to locate the user', () => {
+    const ll = 'test';
+    const expectedAction = {
+      type: 'LOCATE',
+      ll,
+    };
+    expect(actions.locate(ll)).toEqual(expectedAction);
+  });
 });
