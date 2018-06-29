@@ -10,7 +10,10 @@ const List = ({ venues }) => (
       )
       // Few results
       : venues.warning &&
-        <p>{venues.warning.text}</p>
+        <div className="innerContainer">
+          <h2 className="commonTitle">Try other options ↑</h2>
+          <p>{venues.warning.text}</p>
+        </div>
     }
   </div>
 );
