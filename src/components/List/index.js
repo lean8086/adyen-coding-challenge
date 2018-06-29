@@ -1,5 +1,6 @@
 import React from 'react';
 import Group from '../Group';
+import Message from '../Message';
 
 const List = ({ venues }) => (
   <div className="innerContainer">
@@ -10,10 +11,10 @@ const List = ({ venues }) => (
       )
       // Few results
       : venues.warning &&
-        <div className="innerContainer">
-          <h2 className="commonTitle">Try other options ↑</h2>
-          <p>{venues.warning.text}</p>
-        </div>
+        <Message
+          title="Try other options ↑"
+          content={venues.warning.text}
+        />
     }
   </div>
 );

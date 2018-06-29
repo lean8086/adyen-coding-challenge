@@ -10,8 +10,7 @@ import { getLocationParams } from '../actions/params';
  */
 import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
+import Message from '../components/Message';
 import List from '../components/List';
 
 /**
@@ -37,9 +36,14 @@ class App extends Component {
         <Header />
         <main role="main">
           <SearchBox {...params} />
-          {!located && <p>da</p>}
-          {loading && <Loading />}
-          {error && <Error error={error} />}
+          {!located &&
+            <Message
+              title="Waiting for you..."
+              content="Share your current location to get recommendations!"
+            />
+          }
+          {loading && <Message title="Loading..." />}
+          {error && <Message title="Error!" content={error} />}
           {venues && <List venues={venues} />}
         </main>
       </div>
