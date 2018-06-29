@@ -31,12 +31,13 @@ class App extends Component {
   }
 
   render() {
-    const { params, loading, error, venues } = this.props;
+    const { params, loading, located, error, venues } = this.props;
     return (
       <div>
         <Header />
         <main role="main">
           <SearchBox {...params} />
+          {!located && <p>da</p>}
           {loading && <Loading />}
           {error && <Error error={error} />}
           {venues && <List venues={venues} />}
@@ -50,6 +51,7 @@ const mapStateToProps = state => ({
   venues: state.venues,
   params: state.params,
   loading: state.loading,
+  located: state.located,
   error: state.error,
 });
 

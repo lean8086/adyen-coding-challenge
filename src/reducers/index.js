@@ -29,7 +29,15 @@ const reducers = (state = initialState, action) => {
           ...state.params,
           ...action.params,
         },
-        loading: true,
+      };
+    case 'LOCATE':
+      return {
+        ...state,
+        params: {
+          ...state.params,
+          ll: action.ll,
+        },
+        located: true,
       };
     default:
       return state;

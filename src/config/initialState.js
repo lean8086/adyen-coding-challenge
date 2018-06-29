@@ -8,6 +8,7 @@ export default {
     openNow: 1,
     ll: '',
   },
-  loading: true,
+  loading: false,
+  located: false,
   error: null,
 };
