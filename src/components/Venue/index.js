@@ -10,7 +10,7 @@ const Venue = ({ location, name, categories }) => (
       {categories.length &&
         <ul className="venue__categs">
           {categories.map(categ => (
-            <li className="venue__categ" key={categ.id}>{categ.name}</li>
+            <li key={categ.id} className="venue__categ">{categ.name}</li>
           ))}
         </ul>
       }

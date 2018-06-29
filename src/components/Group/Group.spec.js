@@ -19,7 +19,10 @@ const setup = () => {
             lng: -73.98829148466851,
             distance: 130,
           },
-          categories: [{ name: 'Gourmet Shop' }],
+          categories: [{
+            id: '123',
+            name: 'Gourmet Shop',
+          }],
         },
       },
     ],
@@ -31,7 +34,7 @@ const setup = () => {
 describe('Group component', () => {
   it('should render self', () => {
     const { props, enzymeWrapper } = setup();
-    expect(enzymeWrapper.find('header').text()).toEqual(props.type);
+    expect(enzymeWrapper.find('h2').text()).toEqual(props.type);
     expect(enzymeWrapper.find('Venue')).toHaveLength(1);
   });
 });

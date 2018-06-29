@@ -28,7 +28,7 @@ const props = {
                 lng: -73.98829148466851,
                 distance: 130,
               },
-              categories: [{ name: 'Gourmet Shop' }],
+              categories: [{ id: '123', name: 'Gourmet Shop' }],
             },
           },
         ],    
@@ -40,7 +40,7 @@ const props = {
 describe('List component', () => {
   it('should render self', () => {
     const enzymeWrapper = mount(<List {...props} />);
-    expect(enzymeWrapper.find('h2').text()).toEqual(props.venues.headerFullLocation);
+    expect(enzymeWrapper.find('h2').text()).toEqual(props.venues.groups[0].type);
     expect(enzymeWrapper.find('Group')).toHaveLength(1);
   });
   

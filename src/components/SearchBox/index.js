@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from '../../containers/SelectContainer';
 
+import 'stretchy';
 import './SearchBox.css';
 
 const SearchBox = ({ day, section, radius, price, openNow }) => (
