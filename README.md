@@ -5,4 +5,4 @@
 3. Run: `npm start`
 4. Test: `npm test`
 
-[Live demo here](http://lean8086.github.io/adyen-coding-challenge).
+[Live demo here](http://lean8086.github.io/adyen-coding-challenge)!

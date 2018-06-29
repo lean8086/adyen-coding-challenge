@@ -38,7 +38,7 @@ class App extends Component {
           <SearchBox {...params} />
           {!located &&
             <Message
-              title="Waiting for you..."
+              title="Locating you..."
               content="Share your current location to get recommendations!"
             />
           }
