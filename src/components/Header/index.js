@@ -5,8 +5,7 @@ import './Header.css';
 const Header = () => (
   <header className="banner" role="banner">
     <div className="innerContainer">
-      <h1 className="banner__logo">Adyen</h1>
-      <p className="banner__text">Coding Challenge</p>
+      <h1 className="banner__text">Human-readable Foursquare filters</h1>
     </div>
   </header>
 );
