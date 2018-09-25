@@ -18,8 +18,8 @@ export default {
   },
   price: {
     'all the': '1,2,3,4',
-    affordable: '1,2',
     cheap: '1',
+    affordable: '1,2',
     reasonable: '2,3',
     pricey: '3,4',
   },
