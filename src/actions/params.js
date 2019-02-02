@@ -21,7 +21,7 @@ export const getLocationParams = () => dispatch => (
     // Then call an external API to get an aproximate "ll" based on the IP
     () => (
       get(locationAPI.url).then(({ data }) => (
-        dispatch(locate(`${data.lat},${data.lon}`))
+        dispatch(locate(`${data.latitude},${data.longitude}`))
       ))
     ),
   )

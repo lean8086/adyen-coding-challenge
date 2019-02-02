@@ -9,5 +9,5 @@ export const foursquareAPI = {
 };
 
 export const locationAPI = {
-  url: 'http://ip-api.com/json',
+  url: 'https://api.ipdata.co?api-key=0e62dd27de5aebf9c41206a0b0209dab1c5b406a27cc811a55656513',
 };
