@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.1d5cfa92.css",
-  "main.css.map": "static/css/main.1d5cfa92.css.map",
-  "main.js": "static/js/main.823f0ff4.js",
-  "main.js.map": "static/js/main.823f0ff4.js.map"
+  "main.css": "/human-readable-foursquare-filters/static/css/main.ef030abe.chunk.css",
+  "main.js": "/human-readable-foursquare-filters/static/js/main.da0cc368.chunk.js",
+  "main.js.map": "/human-readable-foursquare-filters/static/js/main.da0cc368.chunk.js.map",
+  "static/js/1.7eb3baff.chunk.js": "/human-readable-foursquare-filters/static/js/1.7eb3baff.chunk.js",
+  "static/js/1.7eb3baff.chunk.js.map": "/human-readable-foursquare-filters/static/js/1.7eb3baff.chunk.js.map",
+  "runtime~main.js": "/human-readable-foursquare-filters/static/js/runtime~main.18882bce.js",
+  "runtime~main.js.map": "/human-readable-foursquare-filters/static/js/runtime~main.18882bce.js.map",
+  "static/css/main.ef030abe.chunk.css.map": "/human-readable-foursquare-filters/static/css/main.ef030abe.chunk.css.map",
+  "index.html": "/human-readable-foursquare-filters/index.html",
+  "precache-manifest.95d63a42b2c78876749a1d2bc84d66cd.js": "/human-readable-foursquare-filters/precache-manifest.95d63a42b2c78876749a1d2bc84d66cd.js",
+  "service-worker.js": "/human-readable-foursquare-filters/service-worker.js"
 }
